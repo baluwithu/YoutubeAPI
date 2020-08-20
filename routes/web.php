@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('/' , 'PageController@index');
+Route::get('/about' , 'PageController@about');
+Route::get('/services' , 'PageController@services');
+Route::get('/youtube' , 'PostController@index');
+Route::get('/search' , 'PostController@search');
