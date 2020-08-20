@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{config('app.name','YoutubeAPI')}}</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">   
     </head>
     <style>
         * {
@@ -21,7 +21,8 @@
         .column {
           float: left;
           width: 25%;
-          padding: 0 10px;
+          padding: 62px 10px;
+          height:50%;
         }
         
         /* Remove extra left and right margins, due to padding */

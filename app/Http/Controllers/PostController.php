@@ -16,6 +16,7 @@ class PostController extends Controller
         $keyword = $request->input('title'); 
         $data=$this->getResults($keyword);    
         return view('youtube.index')->with($data);
+        
     }
 
     public function getResults($keyword){

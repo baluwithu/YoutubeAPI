@@ -10,11 +10,10 @@
     <br><br>
     <div class="row">
     <?php 
-    if(count($value)>0 && isset($value)){
-        for ($i = 0; $i < 20; $i++) {   
-            $videoId = $value['items'][$i]['id']['videoId'];
-            $title = $value['items'][$i]['snippet']['title'];
-            $description = $value['items'][$i]['snippet']['description']; 
+    if(count($value) > 0){
+        for ($i = 0; $i < 20; $i++) { 
+            $videoId = !isset($value['items'][$i]['id']['videoId']) ? $value['items'][$i]['id']['playlistId'] : $videoId=$value['items'][$i]['id']['videoId'];            
+            $title = !isset($value['items'][$i]['snippet']['title']) ? "" :$value['items'][$i]['snippet']['title'];
     ?>       
                 <div class="column">
                     <div class="card">
