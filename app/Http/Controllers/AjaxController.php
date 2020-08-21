@@ -14,7 +14,7 @@ class AjaxController extends Controller
    public function getResults($keyword){
 
         $apikey = env("YOUTUBE_API_KEY"); 
-        $googleApiUrl = env("YOUTUBE_API_URL").'?part=snippet&q=' . $keyword . '&maxResults=20&key=' . $apikey;
+        $googleApiUrl = env("YOUTUBE_API_URL").'?part=snippet&q=' . $keyword . '&maxResults=20&videoEmbeddable=true&type=video&part=snippet&key=' . $apikey;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

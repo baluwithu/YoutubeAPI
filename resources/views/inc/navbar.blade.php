@@ -13,6 +13,7 @@
         <ul class="nav navbar-nav">
           <li><a href="/youtube">PHP</a></li>
           <li><a href="/ajax">AJAX</a></li>
+          <li><a href="/javascript">SCRIPT</a></li>
          <!-- <li><a href="/">Home</a></li>          
           <li><a href="/about">About</a></li>
           <li><a href="/services">Services</a></li>-->

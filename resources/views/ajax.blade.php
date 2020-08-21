@@ -24,7 +24,7 @@
                 type: 'GET',
                 data: {
                     _token: CSRF_TOKEN,
-                    search_string: search_string
+                    search_string: search_string,
                 },
                 success: function(data) {
                     $(".row").append(data);

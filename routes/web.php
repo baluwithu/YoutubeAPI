@@ -20,3 +20,4 @@ Route::get('/youtube' , 'PostController@index');
 Route::get('/search' , 'PostController@search');
 Route::get('ajax', function(){return view('ajax');});
 Route::get('/postajax','AjaxController@post');
+Route::view('/javascript','javascript');
